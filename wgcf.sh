@@ -7,7 +7,7 @@
 # Update and upgrade the current packages
 apt update && yes | apt upgrade
 
-# Installing the requirements
+# Install the requirements
 apt install -y python-pip proot-distro proot
 
 # Download the installer
