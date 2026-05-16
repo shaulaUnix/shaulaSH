@@ -4,6 +4,9 @@
 # Termux version: 0.119.0 BETA
 # PRoot-Distro version: Pre-release
 
+# Make the script executable then execute it
+chmod +x wgcf && ./wgcf
+
 # Update and upgrade the current packages
 apt update && yes | apt upgrade
 
