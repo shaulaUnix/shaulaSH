@@ -1,12 +1,8 @@
-#!/usr/bin/env bash
 # INSTALL WGCF IN TERMUX WITH ALPINE LINUX
 # ----------------------------------------
 # Prerequisites include Termux, PRoot-Distro, and wget
 # Termux version: 0.119.0 BETA
-# PRoot-Distro version: Pre-release
-
-# Make the script executable then execute it
-chmod +x wgcf.sh && bash wgcf.sh
+# PRoot-Distro version: Pre-Release
 
 # Update and upgrade the current packages
 apt update && yes | apt upgrade
