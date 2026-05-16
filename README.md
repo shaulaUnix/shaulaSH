@@ -23,7 +23,7 @@ bash installer-alpine.sh
 
 It should automate nearly everything, including upgrading packages, installing the binary, choosing the architecture, registering the account, and generating the `.conf` file.
 
-Next you can move the .conf file to your Download/ folder if desired:
+Next you can move the .conf file to your `Download/` folder if desired:
 
 **Exit Alpine**:
 ```bash
