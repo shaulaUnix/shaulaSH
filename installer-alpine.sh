@@ -51,3 +51,5 @@ chmod +x wgcf
 
 echo "Done!"
 exit 0
+
+# Source:  https://github.com/ViRb3/wgcf/issues/169#issuecomment-1076517330
