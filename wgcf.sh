@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # INSTALL WGCF IN TERMUX WITH ALPINE LINUX
 # ----------------------------------------
 # Prerequisites include Termux, PRoot-Distro, and wget
