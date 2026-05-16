@@ -10,12 +10,7 @@ However, you cannot install this normally in [Termux](https://github.com/termux/
 
 **First, run this command**:
 ```bash
-curl -O https://raw.githubusercontent.com/shaulaUnix/shaulaSH/refs/heads/main/wgcf.sh
-```
-
-**Then this**:
-```bash
-chmod +x wgcf.sh && bash wgcf.sh
+curl -O https://raw.githubusercontent.com/shaulaUnix/shaulaSH/refs/heads/main/wgcf.sh && chmod +x wgcf.sh && bash wgcf.sh
 ```
 
 This should install three packages: `python-pip`, `proot-distro`, and `proot`.
