@@ -8,7 +8,7 @@
 
 However, you cannot install this normally in [Termux](https://github.com/termux/termux-app). Instead, you have to use [proot-distro](https://github.com/termux/proot-distro) as a medium to run `wgcf`.
 
-Here's how to do it:
+**Run this first**:
 
 ```bash
 curl -O https://raw.githubusercontent.com/shaulaUnix/shaulaSH/refs/heads/main/wgcf.sh
@@ -21,4 +21,16 @@ Inside **Alpine Linux**, you just have to run the `installer-alpine.sh` script b
 bash installer-alpine.sh
 ```
 
-It should automate everything including upgrading packages, installing the binary, 
+It should automate nearly everything, including upgrading packages, installing the binary, choosing the architecture, registering the account, and generating the `.conf` file.
+
+Next you can just move the .conf file to your Download/ folder if desired:
+
+**Exit Alpine**:
+```bash
+exit
+```
+
+**Paste this in Termux**:
+```bash
+termux-setup-storage && mv wgcf ~/storage/shared/Download
+```
