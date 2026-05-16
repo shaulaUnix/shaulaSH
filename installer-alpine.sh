@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # This is a complement to the wgcf.sh script!
 # Helper: ChatGPT
+# Tester: shaulaUnix
 
 # Make the installer executable
 chmod u+x installer-alpine.sh
@@ -15,36 +16,38 @@ apk add --no-cache wget
 mkdir -p wgcf
 cd wgcf || exit 1
 
-# Architecture menu
-PS3="Choose architecture: "
-options=("arm64" "armv7" "Exit")
+# Detect architecture
+ARCH=$(uname -m)
 
-select opt in "${options[@]}"; do
-  case $opt in
-    "arm64")
-      echo "Downloading arm64 binary..."
-      wget -O wgcf https://github.com/ViRb3/wgcf/releases/download/v2.2.30/wgcf_2.2.30_linux_arm64
-      chmod +x wgcf
-      ./wgcf register
-      ./wgcf generate
-      break
-      ;;
-    "armv7")
-      echo "Downloading armv7 binary..."
-      wget -O wgcf https://github.com/ViRb3/wgcf/releases/download/v2.2.30/wgcf_2.2.30_linux_armv7
-      chmod +x wgcf
-      ./wgcf register
-      ./wgcf generate
-      break
-      ;;
-    "Exit")
-      echo "Exiting..."
-      exit 0
-      ;;
+case "$ARCH" in
+    aarch64 | arm64)
+        WGCF_URL="https://github.com/ViRb3/wgcf/releases/download/v2.2.30/wgcf_2.2.30_linux_arm64"
+        ARCH_NAME="arm64"
+        ;;
+        
+    armv7l | armv7)
+        WGCF_URL="https://github.com/ViRb3/wgcf/releases/download/v2.2.30/wgcf_2.2.30_linux_armv7"
+        ARCH_NAME="armv7"
+        ;;
+        
     *)
-      echo "Invalid option"
-      ;;
-  esac
-done
+        echo "Unsupported architecture: $ARCH"
+        exit 1
+        ;;
+esac
 
+echo "Detected architecture: $ARCH_NAME"
+echo "Downloading wgcf..."
+
+# Download wgcf
+wget -O wgcf "$WGCF_URL"
+
+# Make executable
+chmod +x wgcf
+
+# Run wgcf
+./wgcf register
+./wgcf generate
+
+echo "Done!"
 exit 0
