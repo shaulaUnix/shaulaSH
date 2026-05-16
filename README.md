@@ -7,3 +7,18 @@
 [wgcf](https://github.com/ViRb3/wgcf) **(WireGuard Configuration)** is an unofficial, open-source command-line tool that lets you generate a WireGuard configuration file for Cloudflare WARP.
 
 However, you cannot install this normally in [Termux](https://github.com/termux/termux-app). Instead, you have to use [proot-distro](https://github.com/termux/proot-distro) as a medium to run `wgcf`.
+
+Here's how to do it:
+
+```bash
+curl -O https://raw.githubusercontent.com/shaulaUnix/shaulaSH/refs/heads/main/wgcf.sh
+```
+This should install three packages: `python-pip`, `proot-distro`, and `proot`.
+
+Inside **Alpine Linux**, you just have to run the `installer-alpine.sh` script by running:
+
+```bash
+bash installer-alpine.sh
+```
+
+It should automate everything including upgrading packages, installing the binary, 
