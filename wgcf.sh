@@ -5,7 +5,7 @@
 # PRoot-Distro version: Pre-release
 
 # Make the script executable then execute it
-chmod +x wgcf && ./wgcf
+chmod +x wgcf.sh && bash wgcf.sh
 
 # Update and upgrade the current packages
 apt update && yes | apt upgrade
