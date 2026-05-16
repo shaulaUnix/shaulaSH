@@ -4,6 +4,6 @@
 ***I am not responsible for any damage done to your device.***
 
 ## wgcf
-[wgcf](https://github.com/ViRb3/wgcf) (WireGuard Configuration) is an unofficial, open-source command-line tool that lets you generate a WireGuard configuration file for Cloudflare WARP.
+[wgcf](https://github.com/ViRb3/wgcf) **(WireGuard Configuration)** is an unofficial, open-source command-line tool that lets you generate a WireGuard configuration file for Cloudflare WARP.
 
 However, you cannot install this normally in [Termux](https://github.com/termux/termux-app). Instead, you have to use [proot-distro](https://github.com/termux/proot-distro) as a medium to run `wgcf`.
