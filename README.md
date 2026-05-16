@@ -8,11 +8,16 @@
 
 However, you cannot install this normally in [Termux](https://github.com/termux/termux-app). Instead, you have to use [proot-distro](https://github.com/termux/proot-distro) as a medium to run `wgcf`.
 
-**Run this first**:
-
+**First, run this command**:
 ```bash
 curl -O https://raw.githubusercontent.com/shaulaUnix/shaulaSH/refs/heads/main/wgcf.sh
 ```
+
+**Then this**:
+```bash
+chmod +x wgcf.sh && bash wgcf.sh
+```
+
 This should install three packages: `python-pip`, `proot-distro`, and `proot`.
 
 Inside **Alpine Linux**, you just have to run the `installer-alpine.sh` script by running:
