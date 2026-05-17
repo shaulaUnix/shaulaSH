@@ -43,8 +43,7 @@ wget -O wgcf "$WGCF_URL"
 chmod +x wgcf
 
 # Run wgcf
-./wgcf register
-echo "" | installer-alpine.sh
+./wgcf register | echo
 ./wgcf generate
 
 echo "Done!"
