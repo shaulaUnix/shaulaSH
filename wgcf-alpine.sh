@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # This is a complement to the wgcf.sh script!
+# This script install the 2.2.30 version of wgcf, which is the newest version as of May 17. You will need to change the version in the future.
 # Helper: ChatGPT, Gemini
 # Tester: shaulaUnix
 
