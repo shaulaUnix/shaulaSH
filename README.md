@@ -25,3 +25,20 @@ echo "y" | termux-setup-storage && cd wgcf && mv wgcf-profile.conf ~/storage/sha
 ```
 
 *It will trigger a concerning message afterwards, but don't worry, your files will not be touched.*
+
+## Native Termux Desktop
+Termux by itself is a terminal-only app, but you can effectively make it to show a desktop sceeen to your phone. Many of Termux desktop scripts are using an utility like `proot-distro`, which is great for  compatibility but bad for performance.
+
+Thus, some people like [Droidmaster](https://github.com/LinuxDroidMaster/Termux-Desktops) decided to make a native version of it, which is usually faster.
+
+I have made a script to make the install experience more convenient. You just need to run this command:
+
+```bash
+curl -O https://raw.githubusercontent.com/shaulaUnix/shaulaSH/refs/heads/main/native-termux.sh
+```
+### How to fix "Process completed error (Signal 9)"
+
+You will need to enable **Developer options** and **Wireless debugging** first on your device. This is pretty hard to explain, so here are two useful resources you can use: 
+
+- [DroidMaster](https://youtu.be/1Vtxi7TxxlE)
+- [Ivon's Blog](https://ivonblog.com/en-us/posts/fix-termux-signal9-error/)
