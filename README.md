@@ -27,7 +27,7 @@ echo "y" | termux-setup-storage && cd wgcf && mv wgcf-profile.conf ~/storage/sha
 *It will trigger a concerning message afterwards, but don't worry, your files will not be touched.*
 
 ## Native Termux Desktop
-Termux by itself is a terminal-only app, but you can effectively make it to show a desktop sceeen to your phone. Many of Termux desktop scripts are using an utility like `proot-distro`, which is great for  compatibility but bad for performance.
+Termux by itself is a terminal-only app, but you can effectively make it to show a desktop screen to your phone. Many of Termux desktop scripts are using an utility like `proot-distro`, which is great for  compatibility but bad for performance.
 
 Thus, some people like [Droidmaster](https://github.com/LinuxDroidMaster/Termux-Desktops) decided to make a native version of it, which is usually faster.
 
