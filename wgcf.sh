@@ -11,7 +11,7 @@ apt update && yes | apt upgrade
 apt install -y python-pip proot-distro proot
 
 # Download the installer
-curl -O https://raw.githubusercontent.com/shaulaUnix/shaulaSH/refs/heads/main/installer-alpine.sh
+curl -O https://raw.githubusercontent.com/shaulaUnix/shaulaSH/refs/heads/main/wgcf-alpine.sh
 
 # Install Alpine Linux and then start it
 pd i alpine && pd sh alpine --termux-home -- bash -c "chmod u+x wgcf-alpine.sh && bash wgcf-alpine.sh"
