@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # This is a complement to the wgcf.sh script!
-# Helper: ChatGPT
+# Helper: ChatGPT, Gemini
 # Tester: shaulaUnix
 
 # Upgrade packages
