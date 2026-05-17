@@ -3,9 +3,6 @@
 # Helper: ChatGPT
 # Tester: shaulaUnix
 
-# Make the installer executable
-chmod u+x installer-alpine.sh
-
 # Upgrade packages
 apk -U upgrade
 
