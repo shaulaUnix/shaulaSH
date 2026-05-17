@@ -21,5 +21,5 @@ Next you can move the .conf file to your `Download/` folder if needed:
 
 **Paste this in Termux**:
 ```bash
-termux-setup-storage && mv wgcf-profile.conf ~/storage/shared/Download
+termux-setup-storage && cd wgcf && mv wgcf-profile.conf ~/storage/shared/Download/
 ```
