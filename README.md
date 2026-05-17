@@ -15,7 +15,7 @@ curl -O https://raw.githubusercontent.com/shaulaUnix/shaulaSH/refs/heads/main/wg
 
 This should install three packages: `python-pip`, `proot-distro`, and `proot`. Then it should install **Alpine Linux** and run the `installer-alpine.sh` script.
 
-It should automate everything, including upgrading packages, installing the binary, choosing the architecture, registering the account, and generating the `.conf` file.
+The `installer-alpine.sh` script should automate everything, including upgrading packages, installing the binary, choosing the architecture, registering the account, and generating the `.conf` file.
 
 Next you can move the .conf file to your `Download/` folder if needed:
 
