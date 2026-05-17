@@ -44,6 +44,7 @@ chmod +x wgcf
 
 # Run wgcf
 ./wgcf register
+echo "" | installer-alpine.sh
 ./wgcf generate
 
 echo "Done!"
