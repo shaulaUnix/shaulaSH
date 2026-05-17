@@ -14,4 +14,4 @@ apt install -y python-pip proot-distro proot
 curl -O https://raw.githubusercontent.com/shaulaUnix/shaulaSH/refs/heads/main/installer-alpine.sh
 
 # Install Alpine Linux and then start it
-pd i alpine && pd sh alpine --termux-home -- bash -c "chmod u+x installer-alpine.sh && bash installer-alpine.sh"
+pd i alpine && pd sh alpine --termux-home -- bash -c "chmod u+x wgcf-alpine.sh && bash wgcf-alpine.sh"
