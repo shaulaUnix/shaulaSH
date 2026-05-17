@@ -43,7 +43,7 @@ wget -O wgcf "$WGCF_URL"
 chmod +x wgcf
 
 # Run wgcf
-./wgcf register | echo
+echo "" | ./wgcf register
 ./wgcf generate
 
 echo "Done!"
