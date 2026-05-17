@@ -3,6 +3,8 @@
 
 ***I am not responsible for any damage done to your device.***
 
+For a more diverse repository, visit [shaulaSC](https://github.com/shaulaUnix/shaulaSC).
+
 ## wgcf
 [wgcf](https://github.com/ViRb3/wgcf) **(WireGuard Configuration)** is an unofficial, open-source command-line tool that lets you generate a WireGuard configuration file for Cloudflare WARP.
 
