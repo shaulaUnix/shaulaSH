@@ -10,4 +10,4 @@ apt update && yes | apt upgrade
 apt install -y x11-repo termux-x11-nightly pulseaudio wget xfce4 tur-repo
 
 # Install Droidmaster's script and then run it
-wget https://raw.githubusercontent.com/LinuxDroidMaster/Termux-Desktops/main/scripts/termux_native/startxfce4_termux.sh && chmod +x startxfce4_termux.sh && bash startxfce4_termux.sh
+curl -O https://raw.githubusercontent.com/LinuxDroidMaster/Termux-Desktops/main/scripts/termux_native/startxfce4_termux.sh && chmod +x startxfce4_termux.sh && bash startxfce4_termux.sh
